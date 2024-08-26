@@ -1,0 +1,29 @@
+.termos-main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 80px 60px;
+    display: grid;
+    gap: 40px;
+}
+
+.termos-container h2{
+    margin-bottom: 20px;
+}
+
+.termos-p {
+    display: grid;
+    gap: 10px;
+    max-width: 75ch;
+}
+
+@media (max-width: 900px) {
+    .termos-main {
+        padding: 80px 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .termos-main {
+        padding: 60px 20px;
+    }
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  gap:0px;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title-bpage-bg {
+  background: var(--cor-11);
+}
+
+.title-bpage-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 60px;
+}
+
+@media (max-width: 900px) {
+  .title-bpage-container {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-bpage-container {
+    padding: 40px 20px;
+  }
+}

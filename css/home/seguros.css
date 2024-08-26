@@ -1,0 +1,180 @@
+.seguros-bg {
+    background: var(--cor-11);
+}
+
+.seguros-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 60px 120px;   
+}
+
+.cards-container {
+    display: flex;
+    gap: 60px; 
+    margin-top: 60px;
+}
+
+.card-prata {
+    background: var(--cor-12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.card-prata a {
+    grid-column: 3/1;
+}
+
+.card-prata span {
+    justify-self: end;
+}
+
+.card-prata span::after {
+    content: "mensal";
+    display: block;
+    color: var(--cor-6);
+    font: 400 0.75rem/1.35 "Poppins", sans-serif;
+    text-align: right;
+}
+
+.card-prata ul {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card-prata ul li::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/img/icones/lista.svg);
+    height: 15px;
+    width: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    margin-top: 8px;
+}
+
+
+
+
+.card-ouro {
+    background: var(--cor-12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    padding: 20px 40px;
+    align-items: center;
+    scale: 1.1;
+}
+
+.card-ouro a {
+    grid-column: 3/1;
+}
+
+.card-ouro span {
+    justify-self: end;
+}
+
+.card-ouro span::after {
+    content: "mensal";
+    display: block;
+    color: var(--cor-6);
+    font: 400 0.75rem/1.35 "Poppins", sans-serif;
+    text-align: right;
+}
+
+.card-ouro ul {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card-ouro ul li::before {
+    content: "";
+    display: inline-block;
+    background-image: url(/img/icones/lista.svg);
+    height: 15px;
+    width: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 1000px) {
+    .cards-container {
+        display: grid;
+        padding: 60px 120px;
+        margin-top: 40px;
+    }
+
+    .card-ouro {
+        scale: 1;
+    }
+
+
+}
+
+
+@media (max-width: 900px) {
+    .cards-container {
+        display: grid;
+        padding: 60px 60px;
+        margin-top: 40px;
+    }
+
+    .card-prata ul {
+        grid-column: 1/-1;
+    }
+
+    .card-ouro ul {
+        grid-column: 1/-1;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .cards-container {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .seguros-container {
+        padding: 40px 40px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .seguros-container {
+        padding: 40px 10px;
+    }
+
+    .seguros-container h1 {
+        margin-left: 20px;
+    }
+
+    .cards-container {
+        margin-top: 0;
+        gap: 10px;
+    }
+
+    .card-prata {
+        scale: 0.8;
+    }
+
+    .card-ouro {
+        scale: 0.8;
+    }
+}

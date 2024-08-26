@@ -1,0 +1,134 @@
+.bpage-itens-container {
+    padding: 80px 0px 80px 100px;  
+}
+
+.bpage-itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px;
+    padding-right: 220px;
+    position: relative;
+    background: url("/img/dec/top-right.svg") no-repeat top 60px right 100px;
+}
+
+
+.bpage-itens-bg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px;
+    padding-right: 220px;
+    background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+    position: relative;
+}
+
+.info-bpage-container {
+    display: grid;
+    gap: 20px;
+    padding-right: 60px;
+}
+
+.image-bpage img {
+    border-radius: 5px;
+}
+
+.list-bpage-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.intro-text-container {
+    display: grid;
+    gap: 20px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.intro-text-container h3::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: var(--cor-p1);
+    position: absolute;
+    top: 0;
+}
+
+.list-bpage ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.list-bpage ul li img {
+    width: 1.6rem;
+}
+
+.button-bpage {
+    display: grid;
+    align-items: end;
+    justify-items: end;
+}
+
+@media (max-width: 1200px) {
+    .info-bpage-container {
+        padding-right: 0px;
+    }
+
+    .bpage-itens {
+        padding-right: 100px;
+    }
+    
+    
+    .bpage-itens-bg {
+        padding-right: 100px;
+    }
+    
+}
+
+
+@media (max-width: 1000px) {
+    .bpage-itens, .bpage-itens-bg {
+        grid-template-columns: 1fr;
+        padding-right: 0;
+        padding: 60px;
+    }
+
+    .bpage-itens-bg {
+        background: linear-gradient(to bottom, var(--cor-0) 30%, var(--cor-11) 0%);
+    }
+
+    .bpage-itens-container {
+        padding: 120px;  
+    }
+}
+
+
+@media (max-width: 800px) {
+    .bpage-itens-container {
+        padding: 60px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .bpage-itens-container {
+        padding: 0px;
+    }
+
+    .bpage-itens-bg {
+        background: var(--cor-11);
+
+}
+}
+
+@media (max-width: 500px) {
+    .list-bpage-container {
+        grid-template-columns: 1fr;
+    }
+
+    .button-bpage {
+        justify-items: start;
+    }
+}

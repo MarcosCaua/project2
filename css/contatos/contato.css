@@ -1,0 +1,226 @@
+#contato {
+  background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
+
+.main-contato-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 60px 60px;
+}
+
+.contato-container {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-dados {
+  background: var(--cor-12);
+  padding: 80px;
+  padding-right: 180px;
+  display: grid;
+  gap: 20px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 1px 2px rgba(31, 30, 30, 0.274);
+}
+
+.contato-dados h2 {
+  padding-bottom: 20px;
+}
+
+/*Dados1*/
+
+.dados-info1 {
+  position: relative;
+  padding-left: 20px;
+}
+
+.dados-icon1::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("/img/icones/local.svg") no-repeat;
+  position: absolute;
+  left: -5px;
+}
+
+/*Dados2*/
+
+.dados-info2 {
+  display: grid;
+  position: relative;
+  padding-left: 20px;
+}
+
+.dados-info2 a {
+  text-decoration: none;
+  color: var(--cor-4);
+}
+
+.dados-info2 a:hover {
+  color: var(--cor-0);
+}
+
+.dados-icon2::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("/img/icones/email.svg") no-repeat;
+  position: absolute;
+  left: -5px;
+}
+
+/*Dados3*/
+
+.dados-info3 {
+  display: flex;
+  gap: 30px;
+  padding: 40px 0;
+  padding-left: 20px;
+}
+
+/*Contatos Form -----------------------*/
+
+.contato-forms {
+  background: var(--cor-0);
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 1px 2px rgba(31, 30, 30, 0.274);
+  padding: 60px;
+}
+
+/*Mapa---------------------------------------*/
+
+.mapa-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 60px;
+}
+
+.mapa-itens-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.mapa-itens {
+  background: var(--cor-0);
+  border-radius: 4px;
+}
+
+.mapa-itens img {
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 -1px 2px rgba(31, 30, 30, 0.274);
+}
+
+.mapa-info {
+  padding: 20px 0;
+  padding-left: 60px;
+  box-shadow: 0 1px 2px rgba(31, 30, 30, 0.274);
+}
+
+.mapa-dados {
+  display: flex;
+  gap: 80px;
+  padding: 20px 0;
+}
+
+.mapa-endereco,
+.mapa-contato {
+  position: relative;
+}
+
+.mapa-endereco::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: calc(100% + 5px);
+  background: var(--cor-4);
+  position: absolute;
+  left: -10px;
+}
+
+.mapa-contato::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background: var(--cor-4);
+  position: absolute;
+  left: -10px;
+}
+
+.mapa-info > p {
+  position: relative;
+}
+
+.mapa-info > p::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/img/icones/horario.svg") no-repeat;
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+}
+
+@media (max-width: 1000px) {
+  .mapa-container {
+    padding: 60px 40px;
+  }
+
+  .contato-forms {
+    padding: 60px 40px;
+  }
+
+  .mapa-dados {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contato-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-contato-container {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .mapa-itens-container {
+    grid-template-columns: 1fr;
+  }
+
+  .mapa-dados {
+    display: flex;
+    gap: 80px;
+  }
+
+  .main-contato-container {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-dados {
+    padding-right: 0px;
+    padding: 60px;
+  }
+
+  .mapa-dados {
+    display: grid;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-contato-container {
+    padding: 10px;
+  }
+}

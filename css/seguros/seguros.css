@@ -1,0 +1,146 @@
+.vantagens-seg-bg {
+  background: var(--cor-12);
+}
+
+.vantagens-seg {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 60px;
+  padding-bottom: 100px;
+}
+
+.vantagens-seg h1 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.vantagens-seg-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.perguntas-seg-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 80px 60px;
+}
+
+.perguntas-seg-container dl {
+  display: grid;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.perguntas-seg-container dl div {
+  padding: 20px;
+}
+
+.perguntas-seg-container dl div dd,
+dt {
+  padding-right: 220px;
+}
+
+.js .perguntas-seg-container dd {
+  display: none;
+}
+
+.js .perguntas-seg-container dd.ativa {
+  display: block;
+}
+
+.perguntas-seg-container dl div dd {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.perguntas-seg-container dl div dt button {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  width: calc(100% + 200px);
+  text-align: left;
+  background: none;
+}
+
+.perguntas-seg-container dl div dt button::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--cor-p1);
+  position: absolute;
+  top: 8px;
+  left: -5px;
+}
+
+.perguntas-seg-container dl div dt button::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 20px;
+  background: url("/img/icones/seta-abrir.svg") no-repeat;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  transition: 0.4s;
+}
+
+.perguntas-seg-container dl div dt button:hover::after,
+.perguntas-seg-container dl button[aria-expanded="true"]::after {
+  rotate: 180deg;
+}
+
+.perguntas-seg-container dl > div:nth-child(odd) {
+  background: var(--cor-1);
+}
+
+@media (max-width: 800px) {
+  .vantagens-seg-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .perguntas-seg-container dl div dd, dt {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vantagens-seg {
+    padding: 0px 40px;
+    padding-bottom: 80px;
+  }
+
+  .perguntas-seg-container dl div dd, dt {
+    padding-right: 60px;
+  }
+
+  .perguntas-seg-container dl div dt {
+    font-size: 1.1rem;
+  }
+
+  .perguntas-seg-container dl div dd {
+    font-size: 0.9rem;
+  }
+
+  .perguntas-seg-container {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .vantagens-seg-container {
+    grid-template-columns: 1fr;
+  }
+
+  .perguntas-seg-container dl div dd, dt {
+    padding-right: 20px;
+  }
+
+  .vantagens-seg {
+    padding: 0px 10px;
+    padding-bottom: 80px;
+  }
+}
